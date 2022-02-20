@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>octadux - DX810e </title>
+    <meta name="author" content="Akira Youngblood">
+    <meta name="description" content="octadux is a no-warranty-provided, quick-n-dirty, possibly-very-broken GUI/patch editor for the EAW/RCF/Mackie DX810 digital matrix mixer">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meyer Reset from CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Add your site or application content here -->
+    <div class="ui-title">
+        <h1>octadux</h1>
+    </div>
+    <div class="ui-container">
+
+        <div class="ui-col">
+            <div class="ui-section">
+                <div class="ui-section-header">
+                    <div class="led"></div>
+                    <p>1 GATE</p>
+                    <meter class="meter" min="-60" max="0" value="-10"></meter>
+                </div>
+                <div class="ui-section-main">
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">THRESH</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">ATTACK</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">RELEASE</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">DUCK</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ui-section">
+                <div class="ui-section-header">
+                    <div class="led"></div>
+                    <p>1 COMP</p>
+                    <meter class="meter" min="-60" max="0" value="-10"></meter>
+                </div>
+                <div class="ui-section-main">
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">THRESH</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">RATIO</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">ATTACK</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">RELEASE</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">GAIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-section">
+                <div class="ui-section-header">
+                    <div class="led"></div>
+                    <p>1 EQ</p>
+                    <meter class="meter" min="-60" max="0" value="-10"></meter>
+                </div>
+                <div class="ui-section-main">
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">HS FREQ</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">HS GAIN</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">MID BW</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">MID FREQ</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">MID GAIN</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">LS FREQ</p>
+                    </div>
+                    <div class="ui-knob-sm">
+                        <input type="text" value="0" class="dial">
+                        <p class="ui-label-sm">LS GAIN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-section">
+                <p class="ui-section-title">SENDS</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN A</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN B</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN C</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN D</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN E</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN F</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN G</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN H</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN I</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">GAIN J</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">2 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">3 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">4 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">5 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">6 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">7 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-col">
+            <div class="ui-section">
+                <p class="ui-section-title">8 GATE</p>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">THRESH</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">ATTACK</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">RELEASE</p>
+                </div>
+                <div class="ui-knob-sm">
+                    <input type="text" value="0" class="dial">
+                    <p class="ui-label-sm">DUCK</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modernizr, jQuery, Popper, and jQuery-Knob from CDNJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" integrity="sha512-lOtDAY9KMT1WH9Fx6JSuZLHxjC8wmIBxsNFL6gJPaG7sLIVoSO9yCraWOwqLLX+txsOw0h2cHvcUJlJPvMlotw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.2/esm/popper.min.js" integrity="sha512-aSCUnIf5arudGto225/QqbEgN6cN22eXky/XUnXgkxsuLfdxzr/zirkr25psrCK24Q8UItMSwAhxTQpTHO24hQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js" integrity="sha512-NhRZzPdzMOMf005Xmd4JonwPftz4Pe99mRVcFeRDcdCtfjv46zPIi/7ZKScbpHD/V0HB1Eb+ZWigMqw94VUVaw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
